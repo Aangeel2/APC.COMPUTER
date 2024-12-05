@@ -1,0 +1,429 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fuente Base */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #d3d3d3; /* Gris claro para fondo */
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 20px;
+    background-color: #000; /* Fondo negro sólido */
+    color: #fff;
+}
+
+header img {
+    margin-right: 10px;
+}
+
+header h5 {
+    font-size: 24px;
+    font-weight: bold; /* Negrita */
+}
+
+/* Navbar */
+nav {
+    background-color: #2d3b3d;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #000; /* Fondo negro sólido */
+    border: 2px solid transparent; /* Borde transparente por defecto */
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Cambiar el fondo y mantener el texto blanco al pasar el ratón (hover) */
+nav ul li a:hover {
+    background-color: #444; /* Fondo negro  al pasar el ratón */
+    color: #fff; /* Mantener el texto blanco */
+    border-color: white; /* Borde blanco al pasar el ratón */
+}
+
+/* Main Section */
+.wrapper {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.main {
+    background-color: lightblue; /* Fondo LightBlue */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2, h1, h3 {
+    font-weight: bold; /* Negrita */
+    color: #000;
+}
+
+h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+	Color: #fff;
+	border: #fff;
+	background-color: #000;
+    text-align: Center;
+}
+
+h3 {
+    color: #000;
+    margin-bottom: 10px;
+    font-size: 22px;
+	
+}
+
+/* Enlaces de interés */
+blockquote a {
+    display: inline-block;
+    margin-right: 15px;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+blockquote a:hover {
+    text-decoration: underline;
+}
+
+/* Servicios */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+ul li img {
+    margin-right: 15px;
+}
+
+ul li strong {
+    font-size: 18px;
+}
+
+/* Añadir borde y fondo a los apartados */
+.enlaces-interes, .servicios, .sobre-nosotros, .imagenes {
+    border: 2px solid #000; /* Borde negro */
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    padding: 15px; /* Añadir padding para el espacio interior */
+    margin-bottom: 20px; /* Separación entre los apartados */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.enlaces-interes a, .servicios strong, .sobre-nosotros p, .imagenes img {
+    color: #fff; 
+}
+
+/* Formulario de Contacto */
+form {
+    display: grid;
+    gap: 12px; /* Reducir espacio entre los elementos */
+}
+
+/* Estilo para los campos de texto */
+form input[type="text"], form input[type="email"], form textarea {
+    width: 714px; /* Ancho */
+    height: 40px; /* Alto  */
+    padding: 10px; /* Añadir espacio interno para que el texto no toque los bordes */
+    border: 1px solid #ccc;
+    border-radius: 4px; /* Bordes redondeados ligeramente */
+    font-size: 14px; /* Tamaño de la fuente reducido */
+}
+
+/* Estilo específico para el textarea */
+form textarea {
+    width: 716px;  /* Ancho del área de texto */
+    height: 114px; /* Alto del área de texto */
+}
+
+/* Estilo para el botón de envío (ajustado a 16px x 16px) */
+form input[type="submit"] {
+    width: 60px; /* Ancho del botón */
+    height: 40px; /* Alto del botón */
+    padding: 0; /* Eliminar padding para ajustarse al tamaño */
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    border: none;
+    border-radius: 4px; /* Redondear ligeramente */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 10px; /* Reducir tamaño de la fuente para que encaje dentro del botón */
+    text-align: center; /* Alinear el texto al centro */
+    line-height: 16px; /* Alinear verticalmente el texto dentro del botón */
+}
+
+/* Estilo al pasar el ratón por el botón */
+form input[type="submit"]:hover {
+    background-color: #333; /* Fondo gris oscuro al pasar el ratón */
+}
+
+/* Footer */
+footer {
+    background-color: #000; /* Fondo negro sólido */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+footer ul li {
+    display: inline-block;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+	border: 2px solid transparent;
+	
+}
+
+footer ul li a:hover {
+    color: #2d3b3d;
+}
+
+/* Estilos Responsivos */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .wrapper {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .main {
+        padding: 20px;
+    }
+
+    ul li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* Estilo para los textos Misión, Visión, Valores, Sobre Mí */
+.mision, .vision, .valores, .sobre-mi {
+    color: #000;  /* Color negro */
+    font-weight: bold;  /* Negrita */
+}
+ /* Separación de apartados */
+        section h2, section h3, footer ul, nav ul {
+            margin-top: 3rem; /* Aproximadamente 3 dedos de margen */
+            margin-bottom: 3rem; /* Aproximadamente 3 dedos de margen */
+        }
+
+        section p, section ul {
+            margin-top: 2rem; /* Aproximadamente 2 dedos de margen */
+            margin-bottom: 2rem; /* Aproximadamente 2 dedos de margen */
+        }
+
+        /* Reducir el tamaño del apartado de "Contacto" */
+        #contacto {
+            font-size: 0.8rem; /* Reducir tamaño de texto */
+            padding: 1rem; /* Reducir el padding dentro de la sección */
+        }
+        #contacto h2 {
+            font-size: 1.3rem; /* Reducir tamaño del título */
+            margin-bottom: 1rem; /* Reducir el margen inferior del título */
+        }
+
+        /* Estilo para los elementos dentro del formulario */
+        #contacto form label, #contacto form input, #contacto form textarea {
+            font-size: 0.8rem; /* Reducir tamaño de texto en el formulario */
+            margin-bottom: 0.5rem; /* Reducir el margen entre los elementos del formulario */
+        }
+
+        /* Reducir el tamaño de los inputs y textarea */
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 0.4rem;
+            margin: 0.3rem 0; /* Reducir el margen entre los campos */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Estilo para el botón "Enviar" */
+        input[type="submit"] {
+            background-color: black;
+            color: white;
+            border: 1px solid #333;
+            padding: 0.5rem 1rem;
+            font-size: 0.9rem; /* Reducir tamaño de la fuente */
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 1rem;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #444;
+        }
+
+        /* Estilos para la barra de navegación */
+        nav {
+            background-image: url('D:/Carla/Mi primera Web/Imagenes/Captura de pantalla 2024-12-03 100527.png'); /* Fondo de la imagen */
+            background-size: cover; /* Hace que la imagen cubra todo el fondo */
+            background-position: center; /* Centra la imagen */
+            padding: 20px 0; /* Agrega un poco de espacio arriba y abajo */
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            display: inline-block;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: bold;
+            background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para los botones */
+            border-radius: 5px; /* Bordes redondeados */
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(0, 0, 0, 0.7); /* Efecto al pasar el ratón */
+            transform: scale(1.05); /* Efecto de agrandar al pasar el ratón */
+        }
+		/* Estilo para el formulario y su contenedor */
+        #contacto {
+            background-color: lightblue; /* Fondo de color lightblue */
+            padding: 20px; /* Espaciado interior */
+            border-radius: 10px; /* Bordes redondeados */
+            width: 60%; /* Ancho del formulario */
+            margin: 30px auto; /* Centrado en la página */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+            text-align: center; /* Centrar el texto dentro del formulario */
+            border: 2px solid black; /* Borde de 4px de color negro */
+        }
+
+        /* Estilo para los elementos dentro del formulario */
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centrar los elementos dentro del formulario */
+        }
+
+        label {
+            margin-bottom: 10px; /* Espaciado entre la etiqueta y el campo */
+            font-weight: bold;
+            font-size: 18px; /* Ajustar el tamaño de la fuente */
+        }
+
+        input[type="text"], input[type="email"], textarea {
+            padding: 10px;
+            margin-bottom: 20px; /* Espaciado entre los campos */
+            border: 1px solid #ccc;
+            border-radius: 5px; /* Bordes redondeados */
+            width: 80%; /* Ajustar el ancho de los campos */
+            max-width: 400px; /* Establecer un tamaño máximo para los campos */
+            box-sizing: border-box; /* Incluir padding en el ancho total */
+            font-size: 16px; /* Ajustar el tamaño de la fuente en los campos */
+        }
+
+        textarea {
+            height: 150px; /* Altura del campo de texto */
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF; /* Color del botón */
+            color: white;
+            border: none;
+            padding: 12px 24px; /* Ajustar el tamaño del botón */
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: auto;
+            margin-top: 20px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3; /* Color más oscuro al pasar el ratón */
+			/* Estilo para el contenedor de contacto */
+        #contacto {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        /* Estilo para el formulario */
+        form {
+            width: 45%;
+        }
+
+        /* Estilo para el apartado desplegable */
+        #desplegable {
+            width: 45%;
+        }
+
+        details {
+            border: ;
+            padding: 10px;
+            background-color: #f4f4f4;
+        }
+
+        summary {
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        details p {
+            margin-top: 10px;
+        }
+			
